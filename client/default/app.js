@@ -5,9 +5,7 @@ Ext.Loader.setPath({
 
 Ext.application({
     name: 'fh',
-
     //controllers: ['LoginController', 'ContactController'],
-    
 
     requires: [
     'Ext.MessageBox'
@@ -17,9 +15,6 @@ Ext.application({
     //models :['ContactModel'],
 	  //stores :['ContactStore'],
     launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
-
         // Initialize the main view
         Ext.Viewport.add({xtype: 'loginScreen'});
     }
